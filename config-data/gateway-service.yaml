@@ -21,4 +21,20 @@ spring:
           uri: lb://clocks-service
           predicates:
             - Path=/clocks/**
+        - id: horaextra-service
+          uri: lb://horaextra-service
+          predicates:
+            - Path=/horaextra/
+        - id: empleado-service
+          uri: lb://empleado-service
+          predicates:
+            - Path=/empleado/
+        - id: justificativo-service
+          uri: lb://justificativo-service
+          predicates:
+            - Path=/justificativo/
+        - id: planilla-service
+          uri: lb://planilla-service
+          predicates:
+            - Path=/planilla/
         
